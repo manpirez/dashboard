@@ -69,5 +69,12 @@ export function namespaceListResource($resource) {
  */
 export function resolveNamespaceList(kdNamespaceListResource, kdDataSelectService) {
   let query = kdDataSelectService.getDefaultResourceQuery('');
+
+  // kdNamespaceListResource.get(query).$promise.then(function (data) {
+  //
+  // },function (error) {
+  //
+  // });
+
   return kdNamespaceListResource.get(query).$promise;
 }

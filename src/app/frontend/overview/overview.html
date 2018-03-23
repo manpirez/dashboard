@@ -42,39 +42,6 @@ limitations under the License.
     </kd-content>
   </kd-content-card>
 
-  <kd-content-card ng-if="$ctrl.overview.cronJobList.items.length">
-    <kd-content>
-      <kd-cron-job-card-list cron-job-list="$ctrl.overview.cronJobList"
-                             cron-job-list-resource="$ctrl.cronJobListResource">
-      </kd-cron-job-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.daemonSetList.daemonSets.length">
-    <kd-content>
-      <kd-daemon-set-card-list daemon-set-list="$ctrl.overview.daemonSetList"
-                               with-statuses="true"
-                               daemon-set-list-resource="$ctrl.daemonSetListResource">
-      </kd-daemon-set-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if=$ctrl.overview.deploymentList.deployments.length>
-    <kd-content>
-      <kd-deployment-card-list deployment-list="$ctrl.overview.deploymentList"
-                               deployment-list-resource="$ctrl.deploymentListResource">
-      </kd-deployment-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.jobList.jobs.length">
-    <kd-content>
-      <kd-job-card-list job-list="$ctrl.overview.jobList"
-                        job-list-resource="$ctrl.jobListResource">
-      </kd-job-card-list>
-    </kd-content>
-  </kd-content-card>
-
   <kd-content-card ng-if="$ctrl.overview.podList.pods.length">
     <kd-content>
       <kd-pod-card-list pod-list="$ctrl.overview.podList"
@@ -84,83 +51,6 @@ limitations under the License.
     </kd-content>
   </kd-content-card>
 
-  <kd-content-card ng-if="$ctrl.overview.replicaSetList.replicaSets.length">
-    <kd-content>
-      <kd-replica-set-card-list replica-set-list="$ctrl.overview.replicaSetList"
-                                replica-set-list-resource="$ctrl.replicaSetListResource">
-      </kd-replica-set-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.replicationControllerList.replicationControllers.length">
-    <kd-content>
-      <kd-replication-controller-card-list replication-controller-list="$ctrl.overview.replicationControllerList"
-                                           replication-controller-list-resource="$ctrl.rcListResource">
-      </kd-replication-controller-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.statefulSetList.statefulSets.length">
-    <kd-content>
-      <kd-stateful-set-card-list stateful-set-list="$ctrl.overview.statefulSetList"
-                                 stateful-set-list-resource="$ctrl.statefulSetListResource">
-      </kd-stateful-set-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <div class="kd-overview-section"
-       ng-if="::$ctrl.shouldShowDiscoverySection()">
-    [[Discovery and Load Balancing|Section label shown on overview page]]
-  </div>
-
-  <kd-content-card ng-if="$ctrl.overview.ingressList.items.length">
-    <kd-content>
-      <kd-ingress-card-list ingress-list="$ctrl.overview.ingressList"
-                            with-statuses="true"
-                            ingress-list-resource="$ctrl.kdIngressListResource">
-      </kd-ingress-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.serviceList.services.length">
-    <kd-content>
-      <kd-service-card-list service-list="$ctrl.overview.serviceList"
-                            with-statuses="true"
-                            service-list-resource="$ctrl.kdServiceListResource">
-      </kd-service-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <div class="kd-overview-section"
-       ng-if="::$ctrl.shouldShowConfigSection()">
-    [[Config and Storage|Section label shown on overview page]]
-  </div>
-
-  <kd-content-card ng-if="$ctrl.overview.configMapList.items.length">
-    <kd-content>
-      <kd-config-map-card-list config-map-list="$ctrl.overview.configMapList"
-                               with-statuses="true"
-                               config-map-list-resource="$ctrl.kdConfigMapListResource">
-      </kd-config-map-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if=$ctrl.overview.persistentVolumeClaimList.items.length>
-    <kd-content>
-      <kd-persistent-volume-claim-card-list persistent-volume-claim-list="$ctrl.overview.persistentVolumeClaimList"
-                                            persistent-volume-claim-list-resource="$ctrl.pvcListResource">
-      </kd-persistent-volume-claim-card-list>
-    </kd-content>
-  </kd-content-card>
-
-  <kd-content-card ng-if="$ctrl.overview.secretList.secrets.length">
-    <kd-content>
-      <kd-secret-card-list secret-list="$ctrl.overview.secretList"
-                           with-statuses="true"
-                           secret-list-resource="$ctrl.kdSecretListResource">
-      </kd-secret-card-list>
-    </kd-content>
-  </kd-content-card>
 </div>
 
 <kd-content-card ng-if="$ctrl.shouldShowZeroState()">

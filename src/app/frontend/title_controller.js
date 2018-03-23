@@ -39,7 +39,7 @@ export class TitleController {
     this.interpolate_ = $interpolate;
 
     /** @private {string} */
-    this.defaultTitle_ = 'Kubernetes Dashboard';
+    this.defaultTitle_ = 'Logs';
   }
 
   /**
