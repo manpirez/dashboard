@@ -16,18 +16,6 @@ limitations under the License.
 
 <kd-warnings warnings="::$ctrl.podList.errors"></kd-warnings>
 
-<div layout="row">
-  <kd-graph-card graph-title="[[CPU usage|Title for graph card displaying CPU metric of pods.]]"
-                 metrics="::$ctrl.podList.cumulativeMetrics"
-                 selected-metric-names="'cpu/usage_rate'">
-  </kd-graph-card>
-  <kd-graph-card graph-title="[[Memory usage|Title for graph card displaying memory metric of pods.]]"
-                 graph-info="[[The memory usage includes the caches in these pods.|Help message detailing what is included in the memory usage]]"
-                 metrics="::$ctrl.podList.cumulativeMetrics"
-                 selected-metric-names="'memory/usage'">
-  </kd-graph-card>
-</div>
-
 <kd-content-card>
   <kd-content>
     <kd-pod-card-list pod-list="$ctrl.podList"

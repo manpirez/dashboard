@@ -41,7 +41,7 @@ limitations under the License.
   <kd-resource-card-columns>
     <kd-resource-card-column>
       <div>
-        <a ng-href="{{::$ctrl.getPodDetailHref()}}"
+        <a ng-href="{{::$ctrl.getLogsHref()}}"
            class="kd-middle-ellipsised-link">
           <kd-middle-ellipsis display-string="{{::$ctrl.pod.objectMeta.name}}">
           </kd-middle-ellipsis>
@@ -74,22 +74,8 @@ limitations under the License.
       </div>
       <div ng-if="::!$ctrl.pod.objectMeta.creationTimestamp">-</div>
     </kd-resource-card-column>
-    <kd-resource-card-column ng-if="::$ctrl.showMetrics">
-      <div ng-if="::$ctrl.hasCpuUsage(pod)">
-        <kd-sparkline timeseries="::$ctrl.pod.metrics.cpuUsageHistory"
-                      class="kd-sparkline-cpu-series"></kd-sparkline>
-        {{::($ctrl.pod.metrics.cpuUsage | kdCores)}}
-      </div>
-      <div ng-if="::!$ctrl.hasCpuUsage(pod)">-</div>
-    </kd-resource-card-column>
-    <kd-resource-card-column ng-if="::$ctrl.showMetrics">
-      <div ng-if="::$ctrl.hasMemoryUsage()">
-        <kd-sparkline timeseries="::$ctrl.pod.metrics.memoryUsageHistory"
-                      class="kd-sparkline-memory-series"></kd-sparkline>
-        {{::($ctrl.pod.metrics.memoryUsage | kdMemory)}}
-      </div>
-      <div ng-if="::!$ctrl.hasMemoryUsage()">-</div>
-    </kd-resource-card-column>
+
+
     <kd-resource-card-column class="kd-row-layout-column kd-icon-column">
       <kd-logs-button object-meta="::$ctrl.pod.objectMeta"
                       resource-kind-name="::$ctrl.pod.typeMeta.kind">

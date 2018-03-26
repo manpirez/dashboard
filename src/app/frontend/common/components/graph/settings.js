@@ -22,7 +22,7 @@ const i18n = {
   /** @export {string} @desc Name of the CPU limit metric as displayed in the legend. */
   MSG_GRAPH_CPU_LIMIT_LEGEND_LABEL: goog.getMsg('CPU Limit'),
   /** @export {string} @desc Name of Y axis showing CPU usage. */
-  MSG_GRAPH_CPU_AXIS_LABEL: goog.getMsg('CPU (cores)'),
+  //MSG_GRAPH_CPU_AXIS_LABEL: goog.getMsg('CPU (cores)'),
   /** @export {string} @desc Name of Y axis showing memory usage. */
   MSG_GRAPH_MEMORY_AXIS_LABEL: goog.getMsg('Memory (bytes)'),
   /** @export {string} @desc Name of time axis. */
