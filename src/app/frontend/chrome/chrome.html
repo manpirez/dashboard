@@ -14,26 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<md-toolbar class="kd-toolbar">
-  <div class="md-toolbar-tools kd-toolbar-tools">
-    <div class="kd-logo-bar">
-      <a ui-sref="{{$ctrl.getOverviewStateName()}}"
-         class="kd-toolbar-logo-link">
-        <md-icon md-svg-icon="assets/images/kubernetes-logo-text.svg"
-                 class="kd-toolbar-logo-text">
-        </md-icon>
-      </a>
-    </div>
-  </div>
-</md-toolbar>
+
 
 <md-toolbar class="kd-second-toolbar">
   <div class="md-toolbar-tools kd-toolbar-tools">
     <kd-nav-hamburger flex="none"></kd-nav-hamburger>
-    <kd-breadcrumbs class="kd-actionbar-breadcrumbs"
-                    limit="3"
-                    flex="auto"
-                    layout="row"></kd-breadcrumbs>
+    Logs
     <div flex="auto"
          ui-view="toolbar"></div>
     <kd-actionbar></kd-actionbar>
