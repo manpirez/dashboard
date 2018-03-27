@@ -80,12 +80,6 @@ limitations under the License.
       <kd-logs-button object-meta="::$ctrl.pod.objectMeta"
                       resource-kind-name="::$ctrl.pod.typeMeta.kind">
       </kd-logs-button>
-      <kd-resource-card-menu>
-        <kd-resource-card-delete-menu-item resource-kind-name="[[Pod|Name of the pod resource]]">
-        </kd-resource-card-delete-menu-item>
-        <kd-resource-card-edit-menu-item resource-kind-name="[[Pod|Name of the pod resource]]">
-        </kd-resource-card-edit-menu-item>
-      </kd-resource-card-menu>
     </kd-resource-card-column>
   </kd-resource-card-columns>
   <kd-resource-card-footer ng-if="::$ctrl.isFailed()">
