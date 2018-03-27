@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {stateUrl as defaultStateUrl} from './overview/state';
+import {stateUrl as defaultStateUrl} from './pod/state';
 
 /**
  * Global route configuration for the application.
