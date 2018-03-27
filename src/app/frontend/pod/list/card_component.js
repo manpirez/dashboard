@@ -14,7 +14,7 @@
 
 import {StateParams} from '../../common/resource/resourcedetail';
 import {stateName} from '../../pod/detail/state';
-
+import {stateName as logsStateName, StateParams as LogsStateParams} from '../../logs/state';
 /**
  * @final
  */
@@ -88,6 +88,16 @@ export class PodCardController {
   getPodDetailHref() {
     return this.state_.href(
         stateName, new StateParams(this.pod.objectMeta.namespace, this.pod.objectMeta.name));
+  }
+
+/**
+   * @return {string}
+   * @export
+   */
+  getLogsHref() {
+    var _this = this;
+    return this.state_.href(
+      logsStateName, new LogsStateParams(_this.pod.objectMeta.namespace, _this.pod.objectMeta.name, _this.pod.typeMeta.kind));
   }
 
   /**
