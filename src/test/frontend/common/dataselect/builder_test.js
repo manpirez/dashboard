@@ -19,7 +19,7 @@ describe('Data select query builder', () => {
   let builder;
 
   /** @type {number} */
-  const itemsPerPage = 10;
+  const itemsPerPage = 50;
 
   beforeEach(() => {
     builder = new DataSelectQueryBuilder(itemsPerPage);

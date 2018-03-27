@@ -83,10 +83,10 @@ export class SettingsService {
    * @return {number}
    */
   getItemsPerPage() {
-    let itemsPerPage = 10;
-    if (this.isInitialized_()) {
+    let itemsPerPage = 50;
+    /*if (this.isInitialized_()) {
       itemsPerPage = this.global_.itemsPerPage;
-    }
+    }*/
     return itemsPerPage;
   }
 

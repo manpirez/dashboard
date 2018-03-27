@@ -74,7 +74,7 @@ func Unmarshal(data string) (*Settings, error) {
 // defaultSettings contains default values for every setting.
 var defaultSettings = Settings{
 	ClusterName:             "",
-	ItemsPerPage:            10,
+	ItemsPerPage:            50,
 	AutoRefreshTimeInterval: 5,
 }
 

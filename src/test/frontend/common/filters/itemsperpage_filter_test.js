@@ -24,7 +24,7 @@ describe('Items per page filter', () => {
   /** @type {!Object} */
   let paginationService;
   /** @type {number} */
-  let itemsPerPage = 10;
+  let itemsPerPage = 50;
 
   beforeEach(() => {
     angular.mock.module(dataSelectModule.name);

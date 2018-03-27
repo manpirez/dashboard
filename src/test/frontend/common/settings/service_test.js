@@ -30,7 +30,7 @@ describe('Settings service', () => {
   });
 
   it('should return items per page default value', () => {
-    expect(service.getItemsPerPage()).toEqual(10);
+    expect(service.getItemsPerPage()).toEqual(50);
   });
 
   it('should return cluster name default value', () => {

@@ -22,7 +22,7 @@ describe('Data Select service ', () => {
   /** @type {!DataSelectService} */
   let service;
   /** @type {number} */
-  let itemsPerPage = 10;
+  let itemsPerPage = 50;
 
   beforeEach(() => {
     angular.mock.module(componentsModule.name);
